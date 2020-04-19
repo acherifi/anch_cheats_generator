@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cherifi.acnhcheatsgenerator.MainActivity">
+    <item
+        android:id="@+id/itemFragment"
+        android:icon="@drawable/leaf"
+        android:title="@string/items"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/recipeFragment"
+        android:icon="@drawable/outline_note_add_24"
+        android:title="@string/recipe"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
