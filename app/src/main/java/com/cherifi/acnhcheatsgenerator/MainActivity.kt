@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity(), RecipeFragment.OnListFragmentInteracti
         setSupportActionBar(toolbar)
 
         NavigationUI.setupWithNavController(bottomNavigationView, nav_host_fragment.findNavController())
+        floatingActionButton.setOnClickListener {
+            FileViewDialogFragment().show(supportFragmentManager, "dialog")
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
