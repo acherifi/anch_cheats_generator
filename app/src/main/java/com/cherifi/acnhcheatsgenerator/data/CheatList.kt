@@ -2,6 +2,6 @@ package com.cherifi.acnhcheatsgenerator.data
 
 object CheatList {
 
-    val list: MutableList<Cheat> = mutableListOf()
+    val list: MutableList<ICheat> = mutableListOf()
 
 }

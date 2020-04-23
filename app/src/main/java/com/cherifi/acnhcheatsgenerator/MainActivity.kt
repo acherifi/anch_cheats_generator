@@ -7,10 +7,11 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.cherifi.acnhcheatsgenerator.data.Cheat
+import com.cherifi.acnhcheatsgenerator.data.ItemCheat
 import com.cherifi.acnhcheatsgenerator.data.CheatList
 import com.cherifi.acnhcheatsgenerator.fragments.ItemFragment
 import com.cherifi.acnhcheatsgenerator.fragments.RecipeFragment
+import com.cherifi.acnhcheatsgenerator.ftp.FTPConnector
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity(), RecipeFragment.OnListFragmentInteracti
 
         NavigationUI.setupWithNavController(bottomNavigationView, nav_host_fragment.findNavController())
         floatingActionButton.setOnClickListener {
-            FileViewDialogFragment().show(supportFragmentManager, "dialog")
+            FTPConnector.getFile()
         }
     }
 
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity(), RecipeFragment.OnListFragmentInteracti
     override fun onListFragmentInteraction(item: Pair<String, String>) {
         val id = item.second
         val name = item.first
-        CheatList.list.add(Cheat(id, name))
+        CheatList.list.add(ItemCheat(id, name))
         Toast.makeText(this, "L'objet $id - $name a été ajouté. ", Toast.LENGTH_SHORT).show()
     }
 }

@@ -9,7 +9,7 @@
         android:id="@+id/recipeFragment"
         android:name="com.cherifi.acnhcheatsgenerator.fragments.RecipeFragment"
         android:label="fragment_recipe_list"
-        tools:layout="@layout/fragment_recipe_list" >
+        tools:layout="@layout/fragment_file_list" >
         <action
             android:id="@+id/action_recipeFragment_to_itemFragment"
             app:destination="@id/itemFragment" />

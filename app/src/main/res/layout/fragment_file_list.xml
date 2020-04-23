@@ -11,4 +11,4 @@
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
         tools:context=".fragments.RecipeFragment"
-        tools:listitem="@layout/fragment_recipe"/>
+        tools:listitem="@layout/fragment_file"/>

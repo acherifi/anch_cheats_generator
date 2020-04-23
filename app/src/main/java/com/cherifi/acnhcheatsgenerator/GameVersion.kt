@@ -6,5 +6,6 @@ enum class GameVersion(gameVersion: String) {
     THIRD("F829A27213D46F9F"), // 1.1.1
     FOURTH("3068F51723DC1A67"), // 1.1.2
     FIFTH("E2D890A4D19FAD02"), // 1.1.3
-    LAST("A31F81D41E1039C5"), // 1.1.4
+    SIXTH("A31F81D41E1039C5"), // 1.1.4
+    LATEST("20CA968C082118C2"), // 1.1.4
 }

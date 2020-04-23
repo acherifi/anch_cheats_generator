@@ -11,7 +11,7 @@ import com.cherifi.acnhcheatsgenerator.R
 import com.cherifi.acnhcheatsgenerator.fragments.RecipeFragment.OnListFragmentInteractionListener
 import com.cherifi.acnhcheatsgenerator.dummy.DummyContent.DummyItem
 
-import kotlinx.android.synthetic.main.fragment_recipe.view.*
+import kotlinx.android.synthetic.main.fragment_file.view.*
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the
@@ -36,7 +36,7 @@ class MyRecipeRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_recipe, parent, false)
+                .inflate(R.layout.fragment_file, parent, false)
         return ViewHolder(view)
     }
 
