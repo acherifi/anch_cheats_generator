@@ -1,6 +1,6 @@
 package com.cherifi.acnhcheatsgenerator
 
-enum class GameVersion(gameVersion: String) {
+enum class GameVersion(val gameVersion: String) {
     FIRST("7FC1BAFF976AECA4"), //1
     SECOND("b0d6d16556b61bf5"), //1.1
     THIRD("F829A27213D46F9F"), // 1.1.1
